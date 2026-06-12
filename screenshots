@@ -1,0 +1,17 @@
+# MULTI SOURCE RAG APPLICATION
+
+========================================================================================
+# STEP 1: IMPORTING OF FILES OR DOCUMENTS by using langchain_community.documents_loaders
+=======================================================================================
+
+from langchain_community.documents_loaders() import (
+    PyPDFLoader
+    Docx2txtLoader
+    CSVLoader
+)
+
+========================================================================================
+# STEP 2: LOADING OF ALL THE DOCUMENTS
+=======================================================================================
+pdf_loader = PyPDFLoader("company_policy.pdf")
+pdf_docs = pdf_loader.load()
