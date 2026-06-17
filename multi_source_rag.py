@@ -96,7 +96,7 @@ print(chunks[0].metadata)
 
 embeddings = GoogleGenerativeAIEmbeddings(
     model = "models/gemini-embedding-001",
-    google_api_key="GOOGLE_API_KEY""
+    google_api_key="GOOGLE_API_KEY"
 )
 
 print("Embedding Object Created")
